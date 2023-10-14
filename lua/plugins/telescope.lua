@@ -12,7 +12,6 @@ return {
         vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
         vim.keymap.set("n", "<leader>rg", builtin.live_grep, {})
 
-        vim.keymap.set("n", "<leader>gc", builtin.git_commits, {})
         vim.keymap.set("n", "<leader>gb", builtin.git_branches, {})
     end
 } 
