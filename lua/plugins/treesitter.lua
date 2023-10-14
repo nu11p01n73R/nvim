@@ -17,7 +17,6 @@ return {
             },
         })
 
-        print("Inside treesitter config")
     end
 }
 
