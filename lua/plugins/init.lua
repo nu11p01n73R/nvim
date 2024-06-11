@@ -4,4 +4,5 @@ return {
     require "plugins/lualine",
     require "plugins/telescope",
     require "plugins/fugitive",
+    require "plugins/telescope-browser",
 }
