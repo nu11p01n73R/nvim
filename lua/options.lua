@@ -8,3 +8,7 @@ vim.o.expandtab = true
 vim.o.mouse = "a"
 
 vim.g.mapleader = " "
+
+
+vim.o.ignorecase = true
+vim.o.smartcase = true
