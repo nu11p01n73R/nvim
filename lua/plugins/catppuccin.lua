@@ -6,12 +6,17 @@ return {
         local catppuccin = require("catppuccin")
 
         catppuccin.setup({
+            flavour = "auto",
+            background = {
+                light = "latte",
+                dark = "mocha",
+            },
             integrations = {
                 treesitter = true
             }
         })
 
-        vim.cmd("colorscheme catppuccin-latte")
+        vim.cmd("colorscheme catppuccin")
     end
 }
 
