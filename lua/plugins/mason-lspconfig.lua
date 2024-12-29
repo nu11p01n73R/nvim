@@ -3,10 +3,9 @@ return {
     name = "mason LSP config",
     dependencies = {
         "williamboman/mason.nvim",
-        "neovim/nvim-lspconfig",
     },
+
     config = function ()
-        require("mason").setup()
         local mason_config = require("mason-lspconfig")
 
         -- Install and setup LSP servers
@@ -14,13 +13,8 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "pyright",
+                "vtsls",
             },
-
-            handlers = {
-                function (server_name)
-                    require("lspconfig")[server_name].setup({})
-                end,
-            }
         })
 
         -- Code navigation using LSP
