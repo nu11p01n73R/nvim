@@ -13,10 +13,10 @@ return {
             },
 
             mapping = {
-                ['<C-y>'] = cmp.mapping.confirm({select = false}),
+                ['<CR>'] = cmp.mapping.confirm({select = false}),
                 ['<C-e>'] = cmp.mapping.abort(),
-                ['<Up>'] = cmp.mapping.select_prev_item({behavior = 'select'}),
-                ['<Down>'] = cmp.mapping.select_next_item({behavior = 'select'}),
+                ['<C-k>'] = cmp.mapping.select_prev_item({behavior = 'select'}),
+                ['<C-j>'] = cmp.mapping.select_next_item({behavior = 'select'}),
             }
         })
     end
